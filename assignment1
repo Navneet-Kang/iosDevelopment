@@ -1,0 +1,61 @@
+//
+//  main.swift
+//  navneetkangAssignment
+//
+//   6/11/20.
+//  Copyright © 2020 .All rights reserved.
+//
+
+import Foundation
+
+var name:String="Navneet Kang"
+var height:Double=163
+var weight=175.36
+
+print("Name:\(name)")
+print("Height:\(height)")
+print("Weight:\(weight)")
+var bmi=weight/pow(height,2)
+if ( bmi > 25) {
+print("Your BMI is higher than 25")
+} else {
+print("Your BMI is lower than 25")
+}
+/*------FOR LOOP----*/
+var  age=26
+var count=0;
+for _ in  1...age{
+    print(name)
+    count=count+1;
+}
+print("Using For Loop: Total number of time \(name) got printed is \(count)")
+/*----While Loop---*/
+count=0
+while count<age{
+        print(name)
+    count=count+1;
+}
+print("Using While Loop: Total number of time \(name) got printed is \(count)")
+/*------Repeat While Loop----*/
+count=0
+repeat{
+    print(name)
+    count=count+1
+}while count<age
+
+print("Using Do While Loop: Total number of time \(name) got printed is \(count)")
+
+
+print("\nReal BMI  ::(weight in kg)/(height(in m)*height(in m))")
+print("\nReal BMI  ::((weight in lbs)/2.20462) / (height(in m)*height(in m))")
+
+print("\nInformation for \(name)")
+weight=121.254
+bmi=(weight/pow(height/100,2))/2.20462
+print("BMI:\(bmi)")
+
+if ( bmi > 25) {
+print("Your BMI is higher than 25")
+} else {
+print("Your BMI is lower than 25")
+}
